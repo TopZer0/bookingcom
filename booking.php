@@ -12,7 +12,7 @@ function bocom($us,$password,$n){
     $hotels  = ['3326463', '4984319'];
     echo "\n$okegreen**$white Creating user ke $n\n";
     $us = $us.$rand;
-    $email = "+"$us."@gmail.com";
+    $email = $us."@gmail.com";
     //$password = $password.$rand;
     $register = $booking->register($email, $password);
     if (!$register->success) {
